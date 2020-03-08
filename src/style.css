@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+  color: #f8f8f8;
+  margin: 0;
+  text-decoration: none;
+  user-select: none;
+}
+.App {
+  display: grid;
+  font-family: sans-serif;
+  grid-template-columns: 20% auto;
+  max-height: 100vh;
+}
+.toolbar {
+  background-color: #333;
+  height: 100vh;
+}
+.toolbar .heading,
+.toolbar .username,
+.toolbar .item {
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  height: 60px;
+  padding-left: 14%;
+  width: 100%;
+}
+.toolbar .heading {
+  color: #999;
+  margin-top: 42px;
+}
+.toolbar .item {
+  cursor: pointer;
+}
+.toolbar .item:hover {
+  background-color: #666;
+}
+.route {
+  background-color: #f8f8f8;
+  height: 100vh;
+  padding: 60px 42px;
+}
+.route h2 {
+  font-size: 23px;
+}
+.route * {
+  color: #333;
+}
+.overview .calls {
+  display: grid;
+  grid-template-columns: 70% auto;
+  padding: 30px 21px 30px 0;
+}
+.overview .calls .next-call-details {
+  padding-top: 21px;
+}
+.overview .calls .next-call-details td {
+  height: 42px;
+}
+.overview .calls .next-call-details .key {
+  font-weight: bold;
+  width: 50%;
+}
+.overview .calls .next-call-details .key::after {
+  content: ':';
+}
+.overview .topics .legend {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 21px;
+}
+.overview .topics .legend .legend-item i {
+  font-size: 12px;
+  margin-right: 2px;
+  transform: rotate(45deg);
+}
+.overview .topics .legend .legend-item #one {
+  color: blue;
+}
+.overview .topics .legend .legend-item #two {
+  color: teal;
+}
+.overview .topics .legend .legend-item #three {
+  color: yellow;
+}
+.overview .topics .legend .legend-item #four {
+  color: orange;
+}
+.overview .topics .legend .legend-item #five {
+  color: violet;
+}
+.overview .topics .legend .legend-item #six {
+  color: #999;
+}
+.call-pie {
+  padding-top: 28px;
+  position: relative;
+  text-align: center;
+}
+.call-pie svg {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 210px;
+}
+.call-pie svg circle {
+  fill: none;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  transform: translate(5px, 5px);
+}
+.call-pie svg circle:nth-child(1) {
+  stroke: #999;
+  stroke-dashoffset: 0;
+  stroke-width: 6px;
+}
+.call-pie svg circle:nth-child(2) {
+  stroke: orange;
+  stroke-width: 8px;
+}
+.call-pie .count {
+  font-size: 60px;
+  margin-top: 28px;
+  width: 210px;
+}
+.call-pie .target {
+  color: #999;
+  font-size: 21px;
+  width: 210px;
+}
+.stat-bar {
+  padding: 6px 0;
+  font-weight: bold;
+}
+.stat-bar .bar {
+  background-color: #999;
+  border-radius: 4px;
+  height: 14px;
+  margin: 7px 0;
+  position: relative;
+}
+.stat-bar .bar .inner-bar {
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+}
+.stat-bar .bar #adherence {
+  background-color: blue;
+  border-radius: 4px 0 0 4px;
+}
+.stat-bar .bar #combination {
+  background-color: teal;
+}
+.stat-bar .bar #dosing {
+  background-color: yellow;
+}
+.stat-bar .bar #guidelines {
+  background-color: orange;
+}
+.stat-bar .bar #safety {
+  background-color: violet;
+}
+.stat-bar .percentages {
+  display: grid;
+}
+.stat-bar .percentages .percentage {
+  text-align: center;
+}
+.modal {
+  background-color: rgba(51, 51, 51, 0.6);
+  position: absolute;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.modal .block {
+  background-color: #f8f8f8;
+  color: #333;
+  height: 420px;
+  margin: 140px auto;
+  padding: 21px 42px;
+  position: relative;
+  width: 700px;
+}
+.modal .block .toggle {
+  background-color: #333;
+  color: #f8f8f8;
+  cursor: pointer;
+  font-size: 21px;
+  padding: 7px 14px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.modal .block h2 {
+  font-size: 18px;
+  margin-top: 28px;
+}
+.modal .block .profile-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.modal .block .profile-grid h3 {
+  margin-top: 14px;
+}
+.modal .block .profile-grid .grid-para {
+  margin: 7px 7px 7px 0;
+}
+.modal .block .profile-grid .grid-para i {
+  color: #999;
+  font-size: 14px;
+}
+.modal .block table {
+  margin-top: 14px;
+  width: 100%;
+}
+.modal .block table * {
+  border: none;
+}
+.modal .block table tr {
+  height: 42px;
+}
+.modal .block table thead tr {
+  border-bottom: 2px solid #333;
+}
+.modal .block table tbody tr td {
+  text-align: center;
+}
+.modal .block table tbody tr:nth-child(odd) {
+  background-color: #e8e8e8;
+}
+.modal .block table tbody tr td:nth-child(1) {
+  font-weight: bold;
+  padding-left: 21px;
+  text-align: left;
+}
+.modal .block * {
+  color: #333;
+}

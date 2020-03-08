@@ -1,0 +1,34 @@
+[
+    { "username": "Andy Repp" },
+    {
+        "date": "2020-04-18T12:00:00",
+        "account": "Dr. Clinton Ackerman",
+        "speciality": ["Respiratory Therapist", "Assistive Therapy"],
+        "profile": "Confident"
+    },
+    {
+        "target": "28",
+        "count": "21"
+    },
+    {
+        "adherence": 18,
+        "combination": 28,
+        "dosing": 15,
+        "guidelines": 23,
+        "safety": 11
+    },
+    {
+        "adherence": 21,
+        "combination": 23,
+        "dosing": 14,
+        "guidelines": 19,
+        "safety": 13
+    },
+    {
+        "adherence": 19,
+        "combination": 24,
+        "dosing": 17,
+        "guidelines": 21,
+        "safety": 18
+    }
+]
